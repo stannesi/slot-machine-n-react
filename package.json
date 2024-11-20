@@ -18,8 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-+   "predeploy": "npm run build",
-+   "deploy": "slot-machine-n-react -d build",
+    "predeploy": "npm run build",
+    "deploy": "slot-machine-n-react -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
