@@ -38,38 +38,160 @@
 }
 
 
+
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #3a3d5a;
-  color: #fff;
-  font-family: Arial, sans-serif;
+  background: black;
+  overflow: hidden;
+  font-family: impact;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  text-align: center;
+}
+
+
+.game {
+  display: block;
+  background-color: white;
+  /* overflow: hidden; */
+  background-image: url('/public/background.png');
+  background-size: 100% 100%; 
+  background-repeat: no-repeat;
+  /* aspect-ratio: 16 / 9; */
+  height: 100%;
+  /* position: absolute; */
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+  transition: transform 0.6s ease;
+  box-shadow: 0vh 0vh 1vh 0.1vh black inset;
+  color: white;
 }
 
 .slot-machine {
-  text-align: center;
-  background-color: #444;
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
+  /* width: 128vh; */
+  height: 100%;
+  margin: 0 auto;
+}
+
+.slot-window {
+    transform: perspective(60vh) rotateX(10deg);
+    box-shadow: 0vh 4vh 1vh 0vh #000000c2 inset, 0vh -4vh 1vh 0vh #000000c2 inset;
+    position: relative;
+    background-color: #444;
+    /* background-image: url('/public/metall.png'); */
+    /* background-size: 100% 100%; */
+    /* top: -2vh; */
+    width: 80%;
+    margin: 0 auto;
+    height: 52vh;
+    display: flex;
+    padding: 0 20px;
+}
+
+.winning-line {
+  width: 76%;
+  height: 0.5%;
+  position: absolute;
+  z-index: 999;
+  top: 48%;
+  left: 12%;
+  /* background-color: black; */
+}
+
+.arrow {
+  width: 7vh;
+  height: 7vh;
+  /* background: url('src/images/arrow.png); */
+  position: absolute;
+  left: -3.6vh;
+  bottom: -3.4vh;
+  background-size: 100% 100%;
+  transition: transform 0.5s ease-in-out;
+  filter: drop-shadow(0.5vh 0vh 0.2vh black);
 }
 
 .reel-container {
+  border-radius: 4vh;
+  box-shadow: 0vh 0vh 3vh 2vh #000000 inset;
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 10px;
+  padding: 2vh;
+  width: 84vh;
+  height: 34vh;
+  background-color: #00000038;
+  margin: 6vh auto 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.box {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #3c3c3c, #ffffff, #3c3c3c);
+  border-radius: 5% / 100%;
+  display: flex;
+  justify-content: space-around;
+  border-left: 0.5vh solid #8b7710;
+  border-right: 0.5vh solid #8b7710;
 }
 
 .reel {
-  width: 100px;
-  height: 100px;
+  /* width: 100px;
+  height: 100px; */
   background-image: url('/public/slot-line.png');
-  background-size: 100px auto;
-  overflow: hidden;
+  /* background-size: 100px auto;
+  overflow: hidden; */
+
+  animation: auto ease 0s 1 normal none running none;
+  background-position-y: 120.4%;
 }
+
+.roller-0 {
+  width: 33.3%;
+  height: 100%;
+  z-index: 100;
+  filter: drop-shadow(0.2vh -0.3vh 0vh black);
+  /* background-image: url('/public/slot-line.png'); */
+  background-size: 13vh 139vh;
+  background-repeat: no-repeat repeat;
+  background-position-x: center;
+  left: 15%;
+  background-position-y: 120.4%;
+}
+
+.roller-1 {
+  width: 38.3%;
+  height: 100%;
+  z-index: 100;
+  filter: drop-shadow(0vh -0.3vh 0vh black);
+  border-left: 0.5vh solid #8b7710;
+  border-right: 0.5vh solid #8b7710;
+  /* background-image: url(src/images/line.png); */
+  background-size: 13vh 139vh;
+  background-repeat: no-repeat repeat;
+  background-position-x: center;
+  border-radius: 13% / 100%;
+  box-shadow: 0vh 0vh 0.5vh 0vh black;
+  background-position-y: 120.4%;
+}
+
+.roller-2 {
+  filter: drop-shadow(-0.2vh -0.3vh 0vh black);
+  width: 33.3%;
+  height: 100%;
+  z-index: 100;
+  /* background-image: url(src/images/line.png); */
+  background-size: 13vh 139vh;
+  background-repeat: no-repeat repeat;
+  background-position-x: center;
+  right: 15%;
+  background-position-y: 120.4%;
+}
+
 
 .controls {
   margin: 15px 0;

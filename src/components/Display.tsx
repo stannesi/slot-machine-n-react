@@ -1,4 +1,5 @@
 import React from "react";
+import { formatCurrency } from "./../utils/helpers";
 
 interface DisplayProps {
   balance: number;
@@ -8,7 +9,7 @@ interface DisplayProps {
 const Display: React.FC<DisplayProps> = ({ balance, outcome }) => {
   return (
     <div className="display">
-      <div id="balanceDisplay">Balance: ${balance}</div>
+      <div id="balanceDisplay">Balance: {formatCurrency(balance)}</div>
       <div id="outcomeDisplay">{outcome}</div>
     </div>
   );

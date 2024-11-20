@@ -30,6 +30,9 @@ const App: React.FC = () => {
     // Simulate spinning
     setSpinning(true);
     const newReels = reels.map(() => Math.floor(Math.random() * SYMBOL_COUNT));
+    
+    console.log(newReels);
+    
     setTimeout(() => {
       setReels(newReels);
       setSpinning(false);
@@ -39,6 +42,7 @@ const App: React.FC = () => {
 
   const calculateWin = (results: number[]) => {
     const isWin = results.every((value) => value === results[0]);
+
     if (isWin) {
       const winnings = betAmount * 10;
       player.updateBalance(winnings);
@@ -49,15 +53,23 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="slot-machine">
-      <h2>Slot Machine</h2>
-      <div className="reel-container">
-        {reels.map((symbolIndex, index) => (
-          <Reel key={index} symbolIndex={symbolIndex} spinning={spinning} />
-        ))}
+    <div className="game">
+      <h2>Simple React Slot Machine</h2>
+      <div className="slot-machine">
+        <Display balance={player.getBalance()} outcome={outcome} />
+        <div className="slot-window">
+          <div className="winning-line">
+          </div>
+          <div className="reel-container">
+            <div className="box">
+              {reels.map((symbolIndex, index) => (
+                <Reel key={index} index={index} symbolIndex={symbolIndex} spinning={spinning} />
+              ))}
+            </div>
+          </div>
+        </div>
+        <Controls betAmount={betAmount} setBetAmount={setBetAmount} onSpin={handleSpin} />
       </div>
-      <Controls betAmount={betAmount} setBetAmount={setBetAmount} onSpin={handleSpin} />
-      <Display balance={player.getBalance()} outcome={outcome} />
     </div>
   );
 };
