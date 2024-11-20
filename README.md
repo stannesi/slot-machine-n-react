@@ -7,7 +7,7 @@ __.: slot-machine-n-react Game is a Simple Casino Slot Machine Game built with R
 [Live Demo ⚡️](https://stannesi.github.io/slot-machine-n-react/)
 
 # Preview
-<img border="0" width="300" id="Picture 1" src="https://github.com/stannesi/slot-machine-n-react/blob/master/public/screenshot-01.png" />
+<img border="0" width="300" id="Picture 1" src="[https://github.com/stannesi/slot-machine-n-react/blob/master/public/screenshot-01.png](https://github.com/stannesi/slot-machine-n-react/blob/main/public/Screenshot-01.png)" />
 
 
 # Getting Started with Create React App
