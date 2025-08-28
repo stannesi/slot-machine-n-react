@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/slot-machine-n-react/static/css/main.252b6fee.css",
+    "main.js": "/slot-machine-n-react/static/js/main.25956f89.js",
+    "static/js/453.c1b6ca67.chunk.js": "/slot-machine-n-react/static/js/453.c1b6ca67.chunk.js",
+    "static/media/background.png": "/slot-machine-n-react/static/media/background.528d9ab36278ebe36802.png",
+    "static/media/slot-line.png": "/slot-machine-n-react/static/media/slot-line.2003d0f3f2fea194b066.png",
+    "index.html": "/slot-machine-n-react/index.html",
+    "main.252b6fee.css.map": "/slot-machine-n-react/static/css/main.252b6fee.css.map",
+    "main.25956f89.js.map": "/slot-machine-n-react/static/js/main.25956f89.js.map",
+    "453.c1b6ca67.chunk.js.map": "/slot-machine-n-react/static/js/453.c1b6ca67.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.252b6fee.css",
+    "static/js/main.25956f89.js"
+  ]
+}
