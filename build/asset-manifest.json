@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a3a6b9d8.css",
+    "main.js": "/static/js/main.d8ce5cde.js",
+    "static/js/453.c1b6ca67.chunk.js": "/static/js/453.c1b6ca67.chunk.js",
+    "static/media/background.png": "/static/media/background.528d9ab36278ebe36802.png",
+    "static/media/slot-line.png": "/static/media/slot-line.2003d0f3f2fea194b066.png",
+    "index.html": "/index.html",
+    "main.a3a6b9d8.css.map": "/static/css/main.a3a6b9d8.css.map",
+    "main.d8ce5cde.js.map": "/static/js/main.d8ce5cde.js.map",
+    "453.c1b6ca67.chunk.js.map": "/static/js/453.c1b6ca67.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3a6b9d8.css",
+    "static/js/main.d8ce5cde.js"
+  ]
+}
