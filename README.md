@@ -1,5 +1,5 @@
 
-# Slot-machine in React Game
+# Slot-Machine-N-React Game
 
 __.: slot-machine-n-react Game is a Simple Casino Slot Machine Game built with React :.__
 
@@ -7,7 +7,7 @@ __.: slot-machine-n-react Game is a Simple Casino Slot Machine Game built with R
 [Live Demo ⚡️](https://stannesi.github.io/slot-machine-n-react/)
 
 # Preview
-<img border="0" width="300" id="Picture 1" src="https://github.com/stannesi/slot-machine-n-react/blob/master/public/screenshot-01.png" />
+<img border="0" width="300" id="Picture 1" src="https://github.com/stannesi/slot-machine-n-react/blob/main/public/Screenshot-01.png" />
 
 
 # Getting Started with Create React App
@@ -40,6 +40,18 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Deployment to GitHub Pages
+
+This project is configured to automatically deploy to GitHub Pages using GitHub Actions. The deployment happens automatically when changes are pushed to the main branch.
+
+### Setup Instructions
+
+1. Go to your repository Settings → Pages
+2. Under "Source", select "GitHub Actions"
+3. The workflow defined in `.github/workflows/deploy.yml` will automatically build and deploy your app
+
+The deployed site will be available at: https://stannesi.github.io/slot-machine-n-react/
 
 ### `npm run eject`
 
